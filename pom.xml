@@ -13,24 +13,33 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <remote.server>https://www.dataelev.dk/manager/text</remote.server>
+        <remote.server>https://dataelev.dk/manager/text</remote.server>
 
         <db.name>CA1</db.name>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
+        </dependency>
 
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-annotations</artifactId>
             <version>2.0.9</version>
-            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-jaxrs2</artifactId>
             <version>2.0.9</version>
-            <type>jar</type>
+
         </dependency>
         <dependency>
             <groupId>org.apache.clerezza.ext</groupId>
@@ -52,12 +61,12 @@
 
 
         <dependency>
-        <groupId>org.glassfish.jersey.bundles</groupId>
-        <artifactId>jaxrs-ri</artifactId>
-        <version>2.32</version>
+            <groupId>org.glassfish.jersey.bundles</groupId>
+            <artifactId>jaxrs-ri</artifactId>
+            <version>2.32</version>
         </dependency>
 
-       <dependency>
+        <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet</artifactId>
             <version>2.26</version>

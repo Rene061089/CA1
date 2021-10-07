@@ -16,7 +16,7 @@ import javax.ws.rs.core.Application;
         servers = {
                 @Server(
                         description = "Droplet URL",
-                        url = "https://kofoednet.systems/CA1"
+                        url = "https://dataelev.dk/CA1"
                 ),
                 @Server(
                         description = "Local URL",
